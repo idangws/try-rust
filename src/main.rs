@@ -9,6 +9,10 @@ mod vector_diff_obj;
 mod ownership;
 mod lifetime;
 mod rc_variables;
+mod arc_variables;
+mod mutex;
+mod advance_topic;
+
 
 fn main() {
     println!("=====trait=====");
@@ -33,4 +37,10 @@ fn main() {
     lifetime::main_lifetime();
     println!("====Reference-counter variables====");
     rc_variables::main_rc_variable();
+    println!("====atomic reference-counter variables====");
+    arc_variables::main_arc();
+    println!("====Mutex====");
+    mutex::main_mutex();
+    println!("====advacne topic====");
+    advance_topic::main_advance();
 }
