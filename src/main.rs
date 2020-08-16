@@ -11,7 +11,7 @@ mod lifetime;
 mod rc_variables;
 mod arc_variables;
 mod mutex;
-mod advance_topic;
+mod circular_references;
 
 
 fn main() {
@@ -41,6 +41,6 @@ fn main() {
     arc_variables::main_arc();
     println!("====Mutex====");
     mutex::main_mutex();
-    println!("====advacne topic====");
-    advance_topic::main_advance();
+    println!("====Circular references====");
+    circular_references::main_cr();
 }
