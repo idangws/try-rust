@@ -12,6 +12,7 @@ mod rc_variables;
 mod arc_variables;
 mod mutex;
 mod circular_references;
+mod concurency;
 
 
 fn main() {
@@ -43,4 +44,6 @@ fn main() {
     mutex::main_mutex();
     println!("====Circular references====");
     circular_references::main_cr();
+    println!("====concurency====");
+    concurency::main_concurancy();
 }
